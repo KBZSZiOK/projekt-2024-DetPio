@@ -57,3 +57,38 @@ CONSTRAINT `seans_fk` FOREIGN KEY (`Seans_ID`) REFERENCES Seanse(`ID`),
 CONSTRAINT `sprzedawca_fk` FOREIGN KEY (`Sprzedawca_ID`) REFERENCES Sprzedawcy(`ID`),
 CONSTRAINT `klient_fk` FOREIGN KEY (`Klient_ID`) REFERENCES Klienci(`ID`)
 );
+
+INSERT INTO `sprzedawcy` (`Imie`, `Nazwisko`) VALUES
+("Jan", "Kowlaski"),
+("Anna", "Nowak"),
+("Marek", "Zieliński"),
+("Katarzyna", "Wiśniewska"),
+("Piotr", "Wójcik");
+
+INSERT INTO `klienci` (`Imie`, `Nazwisko`, `Mail`) VALUES 
+("Tomasz", "Lewandowski", "tomaszlewandowski@gmail.com"),
+("Monika", "Kamińska", "monikakaminska@wp.pl"),
+("Paweł", "Jankowski", "paweljankowski@onet.pl"),
+("Agnieszka", "Dąbrowska", "agnieszkadabrowska@wp.pl"),
+("Marcin", "Sikora", "marcisikora@gmail.com");
+
+INSERT INTO `filmy` (`Tytul`, `Rezyser`, `Czas_trwania_min`) VALUES
+("Incepcja", "Christopher Nolan", 148),
+("Forrest Gump", "Robert Zemeckis", 142),
+("Skazani na Shawshank", "Frank Darabont", 142),
+("Gladiator", "Ridley Scott", 155),
+("Pulp Fiction", "Quentin Tarantino", 154);
+
+INSERT INTO `rodzaj_filmu` (`Nazwa`) VALUES 
+("Thriller"),
+("Komedia"),
+("Dramat"),
+("Dramat historyczny"),
+("Kryinał");
+
+ INSERT INTO `sale` (`Ilosc_miejsc`) VALUES
+ (300),
+ (250),
+ (150),
+ (170),
+ (200);
