@@ -58,6 +58,7 @@ CONSTRAINT `sprzedawca_fk` FOREIGN KEY (`Sprzedawca_ID`) REFERENCES Sprzedawcy(`
 CONSTRAINT `klient_fk` FOREIGN KEY (`Klient_ID`) REFERENCES Klienci(`ID`)
 );
 
+
 INSERT INTO `sprzedawcy` (`Imie`, `Nazwisko`) VALUES
 ("Jan", "Kowlaski"),
 ("Anna", "Nowak"),
@@ -92,3 +93,24 @@ INSERT INTO `rodzaj_filmu` (`Nazwa`) VALUES
  (150),
  (170),
  (200);
+
+INSERT INTO `Filmy_rodzaj` (`Filmy_ID`, `Rodzaj_ID`) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5);
+
+INSERT INTO `Seanse` (`Termin`, `Sala_ID`, `Film_ID`, `Liczba_wolnych_miejsc`) VALUES
+("2024-10-31 15:00:00", 2, 1, 200),
+("2024-10-31 22:00:00", 3, 2, 130),
+("2024-11-17 21:00:00", 1, 3, 280),
+("2024-11-21 13:00:00", 5, 4, 100),
+("2024-12-22 18:00:00", 4, 5, 168);
+
+INSERT INTO `Bilety` (`Seans_ID`, `Sprzedawca_ID`, `Klient_ID`, `Cena`) VALUES
+(1, 4, 2, 39),
+(4, 2, 4, 20),
+(2, 3, 3, 15),
+(3, 1, 5, 19),
+(5, 5, 1, 25);
