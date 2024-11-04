@@ -58,7 +58,6 @@ CONSTRAINT `sprzedawca_fk` FOREIGN KEY (`Sprzedawca_ID`) REFERENCES Sprzedawcy(`
 CONSTRAINT `klient_fk` FOREIGN KEY (`Klient_ID`) REFERENCES Klienci(`ID`)
 );
 
-
 INSERT INTO `sprzedawcy` (`Imie`, `Nazwisko`) VALUES
 ("Jan", "Kowlaski"),
 ("Anna", "Nowak"),
@@ -94,7 +93,7 @@ INSERT INTO `rodzaj_filmu` (`Nazwa`) VALUES
  (170),
  (200);
 
-INSERT INTO `Filmy_rodzaj` (`Filmy_ID`, `Rodzaj_ID`) VALUES
+ INSERT INTO `Filmy_rodzaj` (`Filmy_ID`, `Rodzaj_ID`) VALUES
 (1, 1),
 (2, 2),
 (3, 3),
@@ -114,3 +113,9 @@ INSERT INTO `Bilety` (`Seans_ID`, `Sprzedawca_ID`, `Klient_ID`, `Cena`) VALUES
 (2, 3, 3, 15),
 (3, 1, 5, 19),
 (5, 5, 1, 25);
+
+SELECT filmy.Tytul, filmy.Czas_trwania_min, Seanse.Termin, Seanse.Liczba_wolnych_miejsc, sale.Ilosc_miejsc FROM Seanse INNER JOIN filmy ON Seanse.Film_ID = filmy.ID INNER JOIN sale ON Seanse.Sala_ID = sale.ID;
+
+SELECT filmy.Tytul, rodzaj_filmu.Nazwa, filmy.Czas_trwania_min FROM Filmy_rodzaj INNER JOIN filmy ON Filmy_rodzaj.Filmy_ID = filmy.ID INNER JOIN rodzaj_filmu ON Filmy_rodzaj.Rodzaj_ID = Rodzaj_filmu.ID ORDER BY Czas_trwania_min DESC;
+
+SELECT Film_ID, COUNT(*) AS liczba_seansow FROM Seanse GROUP BY Film_ID;
