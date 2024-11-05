@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    background-color: #7fffd4;
+    height: 20vh;
+    position: fixed;
+    width: 100vw;
+}
+nav{
+    position: fixed;
+    
+}
+section{ 
+    height:  95vh;
+}
+
+footer{
+    position: absolute;
+    background-color: bisque;
+    height: 5vh;
+    width: 100vw;
+}
