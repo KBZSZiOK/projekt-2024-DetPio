@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kino</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="link2.html">Formularz</a>
+            <a href="link3.html">Seanse</a>
+        </nav>
     </header>
-    <section>
+    <section class="section2">
+    <p>Pierwsze 1000 klientów które zapisze się na naszej stronie ma przez rok darmowe przekąski i napoje na seanse.</p>
     <form action="skrypt.php" method="post">
-    Imie <input type="text" name="imie" required><br>
-    Nazwisko <input type="text" name="nazwisko" required><br>
-    Email <input type="email" name="email" required><br>
+    Imie <input type="text" name="imie" required class="form"><br>
+    Nazwisko <input type="text" name="nazwisko" required class="form"><br>
+    Email <input type="email" name="email" required class="form"><br>
     <input type="submit" value="Prześlij">
     <input type="reset">
     </form>
