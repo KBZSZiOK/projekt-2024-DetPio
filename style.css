@@ -44,9 +44,14 @@ nav a{
     align-items: center;
 }
 .form{
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .button{
     margin-top: 20px;
     margin-right: 5px;
+}
+.section3{
+    display: flex;
+    justify-content: center;
 }

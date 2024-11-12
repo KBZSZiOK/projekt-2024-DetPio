@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kino</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +14,8 @@
             <a href="link3.php">Seanse</a>
         </nav>
     </header>
-    <section>
-        <h1>Witamy w nowo otwartym Kinie Kaszebe. Znajdą tu Państwo wiele najlepszych filmów, o których nie da się tak szybko zapomnieć.</h1>
-        <p>Jesteśmy świeżym kinem na rynku i postaramy się zapenić państwu jak najwięcej nie zapomnianej rozrywki.</p>
+    <section class="section3">
+        <?php include 'skrypt1.php'; ?>
     </section>
     <footer>
         <p><b>&copy 2024 Kino Kaszebe</b></p>
