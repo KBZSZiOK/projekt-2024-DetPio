@@ -15,7 +15,7 @@
         </nav>
     </header>
     <section class="section3">
-        <?php include 'skrypt1.php'; ?>
+        <?php include 'skrypt1.php';?>
     </section>
     <footer>
         <p><b>&copy 2024 Kino Kaszebe</b></p>

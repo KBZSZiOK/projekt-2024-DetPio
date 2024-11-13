@@ -4,7 +4,7 @@ $conn = mysqli_connect ("localhost", "root", "", "kino_gr1");
 if(!$conn){
     die("Brak połączenia z bazą danych: ". mysqli_connect_error());
 }
-$sql = "SELECT filmy.Tytul, filmy.Czas_trwania_min, Seanse.Termin, Seanse.Liczba_wolnych_miejsc, sale.Ilosc_miejsc FROM Seanse INNER JOIN filmy ON Seanse.Film_ID = filmy.ID INNER JOIN sale ON Seanse.Sala_ID = sale.ID;";
+$sql = "SELECT Filmy.Tytul, Filmy.Czas_trwania_min, Seanse.Termin, Seanse.Liczba_wolnych_miejsc, SALE.Ilosc_miejsc FROM Seanse INNER JOIN Filmy ON Seanse.Film_ID = Filmy.ID INNER JOIN SALE ON Seanse.Sala_ID = SALE.ID; ";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -19,7 +19,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
         foreach ($row as $cell) {
-            echo "<td>" . htmlspecialchars($cell) . "</td>";
+            echo "<td>" . $cell . "</td>";
         }
             echo "</tr>";
         }

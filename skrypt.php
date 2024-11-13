@@ -10,7 +10,7 @@ $imie = $_POST['imie'];
 $nazwisko = $_POST['nazwisko'];
 $email = $_POST['email'];
 
-$sql = "INSERT INTO klienci (Imie, Nazwisko, Mail) VALUES ('$imie', '$nazwisko', '$email')";
+$sql = "INSERT INTO Klienci (Imie, Nazwisko, Mail) VALUES ('$imie', '$nazwisko', '$email')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Dane zostały zapisane pomyślnie!";

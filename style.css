@@ -47,10 +47,6 @@ nav a{
     display: flex;
     flex-direction: column;
 }
-.button{
-    margin-top: 20px;
-    margin-right: 5px;
-}
 .section3{
     display: flex;
     justify-content: center;
