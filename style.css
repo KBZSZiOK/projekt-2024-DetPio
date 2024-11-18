@@ -45,13 +45,42 @@ nav a{
     flex-direction: column;
 }
 .button{
-    margin-top: 20px;
     margin-right: 5px;
 }
 .section3{
     display: flex;
     justify-content: center;
 }
-img{
+#logo{
     height: 150px;
+}
+#logo1{
+    height: 250px;
+}
+
+#sekcja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20vh;
+}
+.content{
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.content p{
+    font-size: 25px;
+    flex: 1;
+    word-wrap: break-word;
+}
+#sekcja h1{
+    font-size: 50px;
+}
+@media only screen and (max-width: 600px) {
+
+
 }
