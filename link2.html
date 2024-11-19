@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="sekcja0">
         <img src="logo.png" id="logo">
         <nav>
             <a href="index.html">Strona główna</a>
