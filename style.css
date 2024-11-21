@@ -70,6 +70,7 @@ footer{
 .section3{
     display: flex;
     justify-content: center;
+    
 }
 #logo{
     height: 150px;
@@ -77,7 +78,6 @@ footer{
 #logo1{
     height: 250px;
 }
-
 #sekcja{
     display: flex;
     flex-direction: column;
@@ -124,5 +124,8 @@ nav{
 #sekcja h1, p{
     font-size: large;
 }
+table{
+    display: block;
+    overflow-x: auto;
 }
-
+}
