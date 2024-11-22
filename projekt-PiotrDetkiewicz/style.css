@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    background-color: #6feed5;
+    height: 20vh;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: space-between; 
+    padding: 0 10px;
+}  
+section{ 
+    height: 75vh;
+    width: 100vw;
+    padding-top: 20vh;
+}
+footer{
+    position: fixed;
+    background-color: bisque;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.link{
+    margin-right: 150px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color;
+}
+.link:hover{
+    color: blue;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 h2{
+    font-size: 35px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form{
+    width: 250px;
+    border: ridge;
+    transition: background-color 1.5s;
+}
+.form:hover{
+    background-color: rgb(224, 224, 224);
+}
+.button{
+    width: 260px;
+    background-color: rgb(231, 227, 218);
+    border: ridge;
+    transition: background-color 1.5s;
+}
+.button:hover{
+    background-color: rgb(79, 224, 79);
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    
+}
+#logo{
+    height: 150px;
+}
+#logo1{
+    height: 250px;
+}
+#sekcja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20vh;
+}
+.content{
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.content p{
+    font-size: 25px;
+    flex: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    box-sizing: border-box;
+}
+#sekcja h1{
+    font-size: 40px;
+}
+@media only screen and (max-width: 600px) {
+#sekcja, .content {
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+#logo{
+    height: 100px;
+}
+#sekcja h1, p{
+    font-size: large;
+}
+table{
+    display: block;
+    overflow-x: auto;
+}
+}
